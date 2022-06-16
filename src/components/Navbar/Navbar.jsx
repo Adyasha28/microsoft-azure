@@ -3,7 +3,7 @@ import { AppBar, Toolbar, IconButton, Badge, MenuItem, Menu, Typography } from '
 import ShoppingCartIcon from '@mui/icons-material/ShoppingCart';
 import { Link, useLocation } from 'react-router-dom';
 
-import logo from '../../assets/commerce.png';
+import logo from '../../assets/girl.jpg';
 
 const PrimarySearchAppBar = ({ totalItems }) => {
   const [mobileMoreAnchorEl, setMobileMoreAnchorEl] = useState(null);
@@ -42,8 +42,7 @@ const PrimarySearchAppBar = ({ totalItems }) => {
     alignItems: 'center',
     display: 'flex',
     textDecoration: 'none',}} color="inherit">
-            <img src={logo} alt="commerce.js" height="25px" sx={{    marginRight: '10px',
-}} />  Femme-Power
+            <img src={logo} alt="femme-power" height="30px"/>  Femme-Power
           </Typography>
           <div sx={{ flexGrow: 1}} />
           {location.pathname === '/' && (
