@@ -10,10 +10,10 @@ const CartItem = ({ item, onUpdateCartQty, onRemoveFromCart }) => {
   const handleRemoveFromCart = (lineItemId) => onRemoveFromCart(lineItemId);
 
   return (
-    <Card className="cart-item" sx={{width:"350px"}}>
-      {/* <CardMedia alt={item.name} sx={{height: 260}} /> */}
+    <Card className="cart-item" sx={{ maxWidth: '100%' }}>
+      <CardMedia component="img" image={item.image?.url} alt={item.name} height="260px" /> 
 
-      <img src={item.image?.url} alt={item.name} height="300px" width="350px" />
+      {/* <img src={item.image?.url} alt={item.name} height="300px" width="350px" /> */}
 
       <CardContent sx={{    display: 'flex',
     justifyContent: 'space-between',}}>

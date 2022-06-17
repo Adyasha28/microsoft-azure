@@ -14,7 +14,7 @@ const Product = ({ product, onAddToCart,image }) => {
        paddingTop: '56.25%',
        }}  image={product.image}
        title={product.name} /> */}
-       <img src={product.image?.url} alt={product.name} height="300px" width="300px" />
+       <CardMedia component="img" image={product.image?.url} alt={product.name} height="300px" />
       <CardContent>
         <div sx={{display: 'flex',
     justifyContent: 'space-between',}}>

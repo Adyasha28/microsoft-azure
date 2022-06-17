@@ -39,8 +39,8 @@ const Cart = ({ cart, onUpdateCartQty, onRemoveFromCart, onEmptyCart }) => {
   );
 
   return (
-    <Container>
-      <Typography sx={{ marginTop: '10%',}} variant="h3" gutterBottom>Your Shopping Cart</Typography>
+    <Container sx={{ marginTop: '70px'}}>
+      <Typography  variant="h4" gutterBottom>Your Shopping Cart</Typography>
       { !cart.line_items.length ? renderEmptyCart() : renderCart() }
     </Container>
   );
